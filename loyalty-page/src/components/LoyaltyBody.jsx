@@ -24,6 +24,7 @@ const LoyaltyProgramDashboard = () => {
     <div className="loyalty-program-dashboard">
       <div className="header">
         <h1>Loyalty Program Dashboard</h1>
+        <div className='dashboard'> 
         <nav>
           <ul>
              <button><li>Customers</li></button>
@@ -31,6 +32,7 @@ const LoyaltyProgramDashboard = () => {
             <button><li>License</li></button>
           </ul>
         </nav>
+        </div>
       </div>
       <div className="main-content">
         <div className="points-status">

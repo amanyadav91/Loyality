@@ -72,4 +72,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
   }
-  
+   .header .dashboard{
+    align-content: flex-start;
+    background-color: transparent;
+    border-radius: 50px;
+   padding: auto;
+   margin: 40px auto;
+   gap:20px;
+   border-color: transparent;
+   background-origin: padding-box;
+   }
