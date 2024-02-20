@@ -21,17 +21,19 @@ const pointsData = [
 
 const LoyaltyProgramDashboard = () => {
   return (
-    <div className="loyalty-program-dashboard">
+      <>
+      <div className='Container'>
+      <div className="sidebar">sidebar</div><div className="loyalty-program-dashboard">
       <div className="header">
         <h1>Loyalty Program Dashboard</h1>
-        <div className='dashboard'> 
-        <nav>
-          <ul>
-             <button><li>Customers</li></button>
-             <button><li>Settings</li></button>
-            <button><li>License</li></button>
-          </ul>
-        </nav>
+        <div className='dashboard'>
+          <nav>
+            <ul>
+              <button className='btn1'><li>Customers</li></button>
+              <button className='btn2'><li>Settings</li></button>
+              <button className='btn3'><li>License</li></button>
+            </ul>
+          </nav>
         </div>
       </div>
       <div className="main-content">
@@ -70,30 +72,32 @@ const LoyaltyProgramDashboard = () => {
         <div className="points-sources">
           <h2>Points Sources</h2>
           <table>
-              <thead>
-                <tr>
-                  <th>Description</th>
-                  <th>Points</th>
-                  <th>Value</th>
-                  <th>Source</th>
-                  <th>Points from Source</th>
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Points</th>
+                <th>Value</th>
+                <th>Source</th>
+                <th>Points from Source</th>
+              </tr>
+            </thead>
+            <tbody>
+              {pointsData.map((point) => (
+                <tr key={point.description}>
+                  <td>{point.description}</td>
+                  <td>{point.points}</td>
+                  <td>${point.value}</td>
+                  <td>{point.source}</td>
+                  <td>{point.sourcePoints}</td>
                 </tr>
-              </thead>
-              <tbody>
-                {pointsData.map((point) => (
-                  <tr key={point.description}>
-                    <td>{point.description}</td>
-                    <td>{point.points}</td>
-                    <td>${point.value}</td>
-                    <td>{point.source}</td>
-                    <td>{point.sourcePoints}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
+    </div></>
+
   );
 };
 
