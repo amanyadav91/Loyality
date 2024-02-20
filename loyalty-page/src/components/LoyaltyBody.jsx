@@ -72,32 +72,40 @@ const LoyaltyProgramDashboard = () => {
         </div>
         <div className="points-sources">
           <h2>Points Sources</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Description</th>
-                <th>Points</th>
-                <th>Value</th>
-                <th>Source</th>
-                <th>Points from Source</th>
-              </tr>
-            </thead>
-            <tbody>
-              {pointsData.map((point) => (
-                <tr key={point.description}>
-                  <td>{point.description}</td>
-                  <td>{point.points}</td>
-                  <td>${point.value}</td>
-                  <td>{point.source}</td>
-                  <td>{point.sourcePoints}</td>
+          <div className="points-summary">
+            <p>
+              Total Points: <span>{pointsData[0].points}</span> ({pointsData[0].value})
+            </p>
+          </div>
+          <div className="points-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Points</th>
+                  <th>Value</th>
+                  <th>Source</th>
+                  <th>Points from Source</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {pointsData.map((point) => (
+                  <tr key={point.description}>
+                    <td>{point.description}</td>
+                    <td>{point.points}</td>
+                    <td>${point.value}</td>
+                    <td>{point.source}</td>
+                    <td>{point.sourcePoints}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
         </div>
       </div>
     </div>
-    </div></>
+    </>
 
   );
 };
