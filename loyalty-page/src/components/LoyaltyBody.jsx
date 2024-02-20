@@ -29,9 +29,10 @@ const LoyaltyProgramDashboard = () => {
         <div className='dashboard'>
           <nav>
             <ul>
-              <button className='btn1'><li>Customers</li></button>
-              <button className='btn2'><li>Settings</li></button>
-              <button className='btn3'><li>License</li></button>
+            <button className='btn1'><li>Dashboard</li></button>
+            <button className='btn1'><li>Customers</li></button>
+              <button className='btn1'><li>Settings</li></button>
+              <button className='btn1'><li>License</li></button>
             </ul>
           </nav>
         </div>

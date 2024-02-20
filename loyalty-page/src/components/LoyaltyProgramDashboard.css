@@ -35,29 +35,10 @@
     border-radius:30px;
     border-color:transparent;
     font-size: large;
-    
-    
-  }
-  .header .btn2{
-    border-radius:30px;
-    border-color: transparent;
-    font-size: large;
-  }
-  .header .btn3{
-    border-radius:30px;
-    border-color: transparent;
-    font-size: large;
-  }
+    }
   .btn1 :hover{
    color:brown;
-  }
-  .btn2 :hover{
-    color: brown;
-  }
-  .btn3 :hover
-  {
-    color: brown;
-  }
+
 
   .header h1 {
     font-size: 20px;
@@ -87,11 +68,12 @@
   }
   
   .points-status {
-    flex: 1;
+    flex:1;
     margin-right: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color:solid black;
   }
   
   .points-summary {
